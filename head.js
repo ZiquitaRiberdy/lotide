@@ -9,9 +9,9 @@ const assertEqual = function(actual, expected) {
   };
   
 const head = (elementArray) => {
-    firstElement = elementArray[0];
+    return elementArray[0];
     //console.log(firstElement)
-    return firstElement;
+    //return firstElement;
 }
 
 //head([5,6,7]);
