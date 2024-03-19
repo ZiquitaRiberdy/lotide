@@ -1,20 +1,31 @@
-const assertArrayEqual = function(arr1, arr2){
+
+const eqArrays = function(actual, expected) {
+    if (actual === expected) {
+      console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+    } else {
+      console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+    }
+  
+  };
+
+const assertArraysEqual = function(arr1, arr2, compare){
     let answer = true;
 
     if (arr1.length !== arr2.length){
-        //return false;
-        console.log(`False ${arr1} and ${arr2} are not equal`);
-
+        answer = false;
     } else {
         for (let i = 0; i < arr1.length; i++){
             if (arr1[i] !== arr2[i]) {
-              console.log(`False ${arr1} and ${arr2} are not equal`);
-              break;
-        }console.log(`True ${arr1} and ${arr2} are equal`);
-    } //console.log(`True ${arr1} and ${arr2} are equal`);
+                answer = false;
+                break;
+            }
+        }
+    }
+    //return answer;
+    eqArrays(answer, compare);
   }
-}
+
+
 
 //TEST
-eqArrays([1, 2, 3], [1, 2, 3])
-eqArrays([1, 2, 3], [3, 2, 1])
+assertArraysEqual([1, 2, 3], [1, "car", 3], false);
