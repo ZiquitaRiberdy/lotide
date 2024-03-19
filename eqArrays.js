@@ -21,7 +21,7 @@ const assertEqual = function(actual, expected) {
     if (arr1.length !== arr2.length){
         return false;
     } else {
-        for (i = 0; i <= arr1.length; i++){
+        for (let i = 0; i < arr1.length; i++){
             if (arr1[i] !== arr2[i]) {
                 answer = false;
                 return answer;
