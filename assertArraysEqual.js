@@ -1,14 +1,14 @@
 
-const eqArrays = function(actual, expected) {
-    if (actual === expected) {
-      console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+const assertArraysEqual = function(actual) {
+    if (actual === true) {
+      console.log(`✅✅✅ Assertion Passed: ${actual} === true`);
     } else {
-      console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+      console.log(`🛑🛑🛑 Assertion Failed: ${actual} === false`);
     }
   
   };
 
-const assertArraysEqual = function(arr1, arr2, compare){
+const eqArrays = function(arr1, arr2, compare){
     let answer = true;
 
     if (arr1.length !== arr2.length){
@@ -22,10 +22,10 @@ const assertArraysEqual = function(arr1, arr2, compare){
         }
     }
     //return answer;
-    eqArrays(answer, compare);
+    assertArraysEqual(answer);
   }
 
 
 
 //TEST
-assertArraysEqual([1, 2, 3], [1, "car", 3], false);
+eqArrays([1, 2, 3], [1, "car", 3]);
