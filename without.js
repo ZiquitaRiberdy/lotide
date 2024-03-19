@@ -26,16 +26,23 @@ const eqArrays = function(arr1, arr2){
   }
 
 const without = function(source, itemsToRemove){
-    let source2 = source.slice();
+    let source2 = source;
     //let p = 0;
-    for (let i = 0; i < source2.length; i++){
+    for (let i = 0; i < source.length; i++){
         for (let p = 0; p < itemsToRemove.length; p++){
             if (itemsToRemove[p] === source[i]){
-                source2.splice(i, 1);
+                delete source2[i];
             }
         }
     }
-    console.log(source2);
+    
+    // for (let g = 0; g < source2.length; g++){
+    //     if (source2[g] === undefined){
+    //         console.log(source2.slice(g, 1))
+    //     }
+    // }
+    //console.log(source2);
+    //console.log(typeof source[2])
     //return source2;
 }
 
@@ -43,5 +50,5 @@ const without = function(source, itemsToRemove){
 
 //TEST
 //assertArraysEqual([1, 2, 3], [1, "car", 3]);
-without([1, 2, 3], [2]) 
+//without([1, 2, 3], [2]) 
 without(["1", "2", "3"], [1, 2, "3"])
