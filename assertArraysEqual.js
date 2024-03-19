@@ -1,4 +1,4 @@
-const eqArrays = function(arr1, arr2){
+const assertArrayEqual = function(arr1, arr2){
     let answer = true;
 
     if (arr1.length !== arr2.length){
@@ -17,4 +17,4 @@ const eqArrays = function(arr1, arr2){
 
 //TEST
 eqArrays([1, 2, 3], [1, 2, 3])
-//eqArrays([1, 2, 3], [3, 2, 1])
+eqArrays([1, 2, 3], [3, 2, 1])
