@@ -29,7 +29,7 @@ const without = function(source, itemsToRemove){
     let source2 = source.slice();
     //let p = 0;
     for (let i = 0; i < source2.length; i++){
-        for (let p = 0; i < itemsToRemove.length; p++){
+        for (let p = 0; p < itemsToRemove.length; p++){
             if (itemsToRemove[p] === source[i]){
                 source2.splice(i, 1);
             }
