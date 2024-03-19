@@ -2,9 +2,9 @@
 const assertArraysEqual = function(ar1, ar2) {
     //eqArrays(ar1,ar2);
     if (eqArrays(ar1,ar2)=== true) {
-      console.log("true, arrays are equal") 
+      console.log("✅✅✅ Assertion Passed: array1 === array2") 
     } else {
-        console.log("false, arrays are not equal")
+        console.log("🛑🛑🛑 Assertion Failed: array1 !== array2")
     }
   };
 
@@ -29,4 +29,4 @@ const eqArrays = function(arr1, arr2){
 
 
 //TEST
-eqArrays([1, 2, 3], [1, "car", 3]);
+assertArraysEqual([1, 2, 3], [1, "car", 3]);
