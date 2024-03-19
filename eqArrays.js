@@ -14,16 +14,17 @@ const assertEqual = function(actual, expected) {
   //assertEqual(1, 10);
   
 
-  let answer = true;
 
   const eqArrays = function(arr1, arr2){
+    let answer = true;
 
     if (arr1.length !== arr2.length){
-        answer = false;
+        return false;
     } else {
         for (i = 0; i <= arr1.length; i++){
             if (arr1[i] !== arr2[i]) {
                 answer = false;
+                return answer;
             }
         }
     }
