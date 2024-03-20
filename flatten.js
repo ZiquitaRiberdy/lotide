@@ -9,8 +9,8 @@ const flatten = function(array){
             newArray.push(item);
         }
     }
-    console.log(newArray)
-    //return newArray;
+    //console.log(newArray)
+    return newArray;
 }
 
 const assertArraysEqual = function(ar1, ar2) {
