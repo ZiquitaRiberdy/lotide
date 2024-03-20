@@ -35,9 +35,9 @@ const middle = function(array){
         //console.log(a)
         let b = a - 1;
         //console.log(array[a], array[b])
-        return [array[a], array[b]];
+        return [array[b], array[a]];
     } else {
-        let c = Math.ceil(array.length / 2)
+        let c = Math.floor(array.length / 2)
         //console.log(array[c])
         return [array[c]];
     }
@@ -49,4 +49,4 @@ middle([2,3,4,9,12,3,6,8,9,0]);
 
 middle([2,3]);
 
-assertArraysEqual(middle[4,5,6,7,8], true)
+assertArraysEqual(middle([4,5,6,7,8]), true)
