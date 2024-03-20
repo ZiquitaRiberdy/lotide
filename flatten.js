@@ -9,7 +9,7 @@ const flatten = function(array){
             newArray.push(item);
         }
     }
-    //console.log(newArray)
+    console.log(newArray)
     return newArray;
 }
 
