@@ -26,18 +26,20 @@ const eqArrays = function(arr1, arr2){
   }
 
 const without = function(source, itemsToRemove){
-    let source2 = source;
+    //let source2 = source;
     let array = [];
     //let p = 0;
-    for (let i = 0; i < source2.length; i++){
-        for (let p = 0; p < itemsToRemove.length; p++){
-            if (itemsToRemove[p] !== source2[i]){
-                array.push(source[i]);
+    for (let i = 0; i < source.length; i++){
+        for (let r = 0; r < itemsToRemove.length; r++){
+            if (source[i] === itemsToRemove[r]){
+                break;
+            }
+            if (itemsToRemove.length - 1 === r) {
+                array.push(source[i])
             }
         }
     }
     console.log(array);
-    
     
     // for (let g = 0; g < source2.length; g++){
     //     if (source2[g] === undefined){
