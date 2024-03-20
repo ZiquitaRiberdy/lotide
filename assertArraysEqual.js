@@ -28,5 +28,7 @@ const eqArrays = function(arr1, arr2){
 
 
 
+
 //TEST
-assertArraysEqual([1, 2, 3], [1, "car", 3]);
+//assertArraysEqual([1, 2, 3], [1, "car", 3]);
+flatten([1, 2,]);
