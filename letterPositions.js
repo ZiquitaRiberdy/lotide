@@ -14,7 +14,8 @@ const assertEqual = function(actual, expected) {
         if (obj[sentence[i]]) {
             obj[sentence[i]].push(i)
         } else {
-            obj[sentence[i]] = [i];
+            obj[sentence[i]] = [];
+            obj[sentence[i]].push(i);
         }
     }
 
@@ -24,6 +25,6 @@ const assertEqual = function(actual, expected) {
   }
 
 //   TESTS
-//const result = "here is where i live";
-assertEqual(letterPositions(result).h, [2])
+const result = "hello";
+assertEqual(letterPositions(result).h, [0])
 //letterPositions("here is where i live")
