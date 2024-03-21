@@ -16,10 +16,10 @@ const assertEqual = function(actual, expected) {
             obj[letter] = 1;
         }
     }
-    console.log(obj)
+    return obj;
 
   }
 
 //   TESTS
-countLetters("here is where i live")
-assertEqual(countLetters("here is where i live"), true)
+const result = countLetters("here is where i live")
+assertEqual(result["h"], 2)
