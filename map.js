@@ -36,4 +36,4 @@ const map = function(array, callback) {
 }
 const results1 = map(words, (word) => word[0]);
 //(word) => word[0] is the anonymous function 
-assertArraysEqual(results1, [g,c,t,m,t]);
+assertArraysEqual(results1, ["g","c","t","m","t"]);
