@@ -8,4 +8,4 @@ const head = (elementArray) => {
 }
 
 
-  
+module.exports = head; 
