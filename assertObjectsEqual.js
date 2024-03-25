@@ -17,12 +17,10 @@ const assertObjectsEqual = function(actual, expected) {
         return false;
     } else {
         for (item in object1){
-            for(element in object2){
-                if (object2[element] === object1[item]) {
+                if (object2[item] === object1[item]) {
                     console.log("it's equal")
                     count ++
                 }
-            }
         }
 
         if (count === Object.keys(object1).length) {
